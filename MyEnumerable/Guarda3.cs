@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,14 +24,14 @@ namespace MyEnumerable
 
         public IEnumerator<T> GetEnumerator()
         {
-            for (int i = 0; i < 10; i++)
-                yield return i;
+            return varList.GetEnumerator();
         }
-
+        
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
+
         public T GetItem(int i)
         {
             return varList[i];
@@ -44,5 +45,6 @@ namespace MyEnumerable
             else
                 varList[i] = item;
         }
+
     }
 }
