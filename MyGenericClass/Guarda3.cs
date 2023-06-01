@@ -20,10 +20,21 @@ namespace MyGenericClass
         {
             switch (i)
             {
-                case 1: return var1;
-                case 2: return var2;
-                case 3: return var3;
+                case 0: return var1;
+                case 1: return var2;
+                case 2: return var3;
                 default: return default;
+            }
+        }
+
+        public void SetItem(int i, T item)
+        {
+            switch (i)
+            {
+                case 0: var1 = item;
+                case 1: var2 = item;
+                case 2: var3 = item;
+                default: throw new IndexOutOfRangeException();
             }
         }
     }
