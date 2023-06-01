@@ -15,5 +15,16 @@ namespace MyGenericClass
             var2 = default;
             var3 = default;
         }
+
+        public T GetItem(int i)
+        {
+            switch (i)
+            {
+                case 1: return var1;
+                case 2: return var2;
+                case 3: return var3;
+                default: return default;
+            }
+        }
     }
 }
