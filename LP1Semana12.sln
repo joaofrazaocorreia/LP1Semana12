@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEnumerable", "MyEnumerabl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustLikeACollection", "JustLikeACollection\JustLikeACollection.csproj", "{0F19DA03-DA2A-4313-9A62-43703F161D63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteStuff1", "WriteStuff1\WriteStuff1.csproj", "{0DF95CED-744A-4E4F-94E9-E2FBAF1BA285}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0F19DA03-DA2A-4313-9A62-43703F161D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F19DA03-DA2A-4313-9A62-43703F161D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F19DA03-DA2A-4313-9A62-43703F161D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF95CED-744A-4E4F-94E9-E2FBAF1BA285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF95CED-744A-4E4F-94E9-E2FBAF1BA285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF95CED-744A-4E4F-94E9-E2FBAF1BA285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF95CED-744A-4E4F-94E9-E2FBAF1BA285}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
