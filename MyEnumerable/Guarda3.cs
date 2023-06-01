@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MyEnumerable
 {
-    public class Guarda3<T>
+    public class Guarda3<T> : IEnumerable<T>
     {
         private T var1, var2, var3;
         private List<T> varList = new List<T>();
@@ -19,6 +19,17 @@ namespace MyEnumerable
             varList.Add(var1);
             varList.Add(var2);
             varList.Add(var3);
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < 10; i++)
+                yield return i;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
         public T GetItem(int i)
         {
