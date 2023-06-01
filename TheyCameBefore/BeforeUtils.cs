@@ -7,12 +7,12 @@ namespace TheyCameBefore
 {
     public static class BeforeUtils
     {
-        public static IEnumerable<T> GetTheOnesBefore(IEnumerable<T> list, T limit)
-        where T : IComparable<T> where T : struct
+        public static IEnumerable<T> GetTheOnesBefore<T>(IEnumerable<T> list, T limit)
+        where T : struct, IComparable
         {
             foreach (T item in list)
             {
-                if (item > limit)
+                if (limit.CompareTo(item) > 0)
                     yield return item;
             }
         }
