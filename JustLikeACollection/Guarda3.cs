@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JustLikeACollection
 {
-    public class Guarda3<T> : IEnumerable<T>, IComparable<T>
+    public class Guarda3<T> : IEnumerable<T>
     {
         private T var1, var2, var3;
         private List<T> varList = new List<T>();
@@ -50,7 +50,7 @@ namespace JustLikeACollection
         {
             for (int i = 0; i < 3; i++)
             {
-                if (varList[i].CompareTo(default(T)) == 0)
+                if (EqualityComparer<T>.Default.Equals(varList[i] , (default(T))) )
                 {
                     SetItem(i, item);
                     break;
